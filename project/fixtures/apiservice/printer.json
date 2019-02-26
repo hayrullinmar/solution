@@ -1,0 +1,42 @@
+[
+{
+  "model": "apiservice.printer",
+  "pk": 1,
+  "fields": {
+    "name": "Printer Kitchen One",
+    "api_key": "3333",
+    "check_type": "kitchen",
+    "point_id": 1
+  }
+},
+{
+  "model": "apiservice.printer",
+  "pk": 2,
+  "fields": {
+    "name": "Printer Kitchen Two",
+    "api_key": "4444",
+    "check_type": "kitchen",
+    "point_id": 2
+  }
+},
+{
+  "model": "apiservice.printer",
+  "pk": 3,
+  "fields": {
+    "name": "Printer Client One",
+    "api_key": "5555",
+    "check_type": "kitchen",
+    "point_id": 3
+  }
+},
+{
+  "model": "apiservice.printer",
+  "pk": 4,
+  "fields": {
+    "name": "Printer Client TWO",
+    "api_key": "7777",
+    "check_type": "client",
+    "point_id": 4
+  }
+}
+]

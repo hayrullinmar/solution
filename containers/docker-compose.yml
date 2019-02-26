@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  wkhtmltopdf:
+    image: openlabs/docker-wkhtmltopdf-aas:latest
+    environment:
+      WKHTMLTOPDF_BIN: "/usr/local/bin/wkhtmltopdf"
+    ports:
+      - 32769:80/tcp
+  db:
+    image: postgres:9.6
+    environment:
+      POSTGRES_DB: test
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_USER: testuser
+      PGDATA: /tmp
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    ports:
+    - 5432:5432/tcp
+    tty: true
+  redis:
+    image: redis
+    ports:
+    - 6379:6379/tcp
+volumes:
+  postgres_data:
